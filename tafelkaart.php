@@ -9,7 +9,7 @@ function tafelkaart($n) {
 
 
     for ($rij = 1; $rij <= $n; $rij++) {
-        echo $rij . "\t";
+        //echo $rij . "\t";
         //echo $rij . "\t";
         for ($kolom = 0; $kolom <= $n; $kolom++) {
             echo ($rij * $kolom) . "\t";

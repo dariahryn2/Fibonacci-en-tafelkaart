@@ -13,8 +13,9 @@ function tafelkaart($n) {
         for ($kolom = 1; $kolom <= $n; $kolom++) {
             echo ($rij * $kolom) . "\t";
         }
+        echo "\n";
+
     }
-    echo "\n";
 
 }
 $n = (int)readline("Getal:");

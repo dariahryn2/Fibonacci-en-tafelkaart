@@ -1,20 +1,20 @@
 <?php
 
-// Declaration of strings
-$var1 = "Geeksforgeeks";
-$var2 = "Priyank";
- 
-// Display HTML table using PHP echo
-// Use $variable_name to use a string
-// in code
-echo "<table border=1 cellspacing=1 cellpadding=1>
-    <tr> 
-       <td><font color=green>$var1</font></td>
-       <td>is best learning platform</td>
-    </tr>
-    <tr> 
-        <td><font color=green>Written by</font></td>
-        <td>$var2</td>
-    </tr>
-</table>";
+function tafelkaart($n) {
+    echo "Tafel van\t";
+    for ($i = 1; $i <= $n; $i++) {
+        echo $i . "\t";
+    }
+
+    for ($rij = 1; $rij <= $n; $rij++) {
+        echo $rij . "\t";
+        for ($kolom = 1; $kolom <= $n; $kolom++) {
+            echo ($rij * $kolom) . "\t";
+        }
+    }
+}
+$n = (int)readline("Getal:");
+tafelkaart($n);
+
+
 ?>

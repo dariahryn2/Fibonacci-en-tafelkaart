@@ -7,16 +7,13 @@ function tafelkaart($n) {
     }
     echo "\n";
 
-
     for ($rij = 1; $rij <= $n; $rij++) {
         echo $rij . "\t";
         for ($kolom = 1; $kolom <= $n; $kolom++) {
             echo ($rij * $kolom) . "\t";
         }
         echo "\n";
-
     }
-
 }
 $n = (int)readline("Getal:");
 tafelkaart($n);

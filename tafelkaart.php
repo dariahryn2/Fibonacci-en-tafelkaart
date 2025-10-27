@@ -1,7 +1,7 @@
 <?php
 
 function tafelkaart($n) {
-    echo "Tafel van\t";
+    echo "\t";
     for ($i = 1; $i <= $n; $i++) {
         echo $i . "\t";
     }
@@ -9,9 +9,8 @@ function tafelkaart($n) {
 
 
     for ($rij = 1; $rij <= $n; $rij++) {
-        //echo $rij . "\t";
-        //echo $rij . "\t";
-        for ($kolom = 0; $kolom <= $n; $kolom++) {
+        echo $rij . "\t";
+        for ($kolom = 1; $kolom <= $n; $kolom++) {
             echo ($rij * $kolom) . "\t";
         }
         echo "\n";

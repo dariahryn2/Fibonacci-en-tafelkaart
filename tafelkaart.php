@@ -5,6 +5,8 @@ function tafelkaart($n) {
     for ($i = 1; $i <= $n; $i++) {
         echo $i . "\t";
     }
+    echo "\n";
+
 
     for ($rij = 1; $rij <= $n; $rij++) {
         echo $rij . "\t";
@@ -12,6 +14,8 @@ function tafelkaart($n) {
             echo ($rij * $kolom) . "\t";
         }
     }
+    echo "\n";
+
 }
 $n = (int)readline("Getal:");
 tafelkaart($n);
